@@ -184,6 +184,181 @@
       "id":37,
       "sentence":"Quel est le mot de passe du wifi ?",
       "context":"hotel"
-    }
+    },
+    {
+      "id":38,
+      "sentence":"Quel est le mot de passe du wifi ?",
+      "context":"hotel"
+    },
+    {
+      "id":39,
+      "sentence":" ______ est en panne / cassé.",
+      "context":"hotel"
+    },
+    {
+      "id":40,
+      "sentence":"La clim ne fonctionne pas.",
+      "context":"hotel"
+    },
+    {
+      "id":41,
+      "sentence":"Les oreillers manquent / il n’y en a pas.",
+      "context":"hotel"
+    },
+    {
+      "id":42,
+      "sentence":"Je voudrais une couverture supplémentaire s’il vous plait.",
+      "context":"hotel"
+    },
+    {
+      "id":43,
+      "sentence":"Pourrais je avoir un autre ______, s’il vous plait ?",
+      "context":"hotel"
+    },
+    {
+      "id":44,
+      "sentence":"A quel étage se trouve la chambre ?",
+      "context":"hotel"
+    },
+    {
+      "id":45,
+      "sentence":"Où est l’ascenseur ?",
+      "context":"hotel"
+    },
+    {
+      "id":46,
+      "sentence":"Comment est ce que je me connecte à internet ?",
+      "context":"hotel"
+    },
+    {
+      "id":47,
+      "sentence":"Est ce que le petit déjeuner est compris ?",
+      "context":"hotel"
+    },
+    {
+      "id":48,
+      "sentence":"Il faut remettre des serviettes dans ma chambre",
+      "context":"hotel"
+    },
+    {
+      "id":49,
+      "sentence":"Où est ce que je peux trouver un supermarché ?",
+      "context":"city"
+    },
+    {
+      "id":50,
+      "sentence":"Où est l’hopital ?",
+      "context":"city"
+    },
+    {
+      "id":51,
+      "sentence":"Où puis je trouver un restaurant (pas cher) ?",
+      "context":"city"
+    },
+    {
+      "id":52,
+      "sentence":"Comment est ce qu’on peut aller à _____ ?",
+      "context":"city"
+    },
+    {
+      "id":53,
+      "sentence":"Comment puis je aller à ________ ?",
+      "context":"city"
+    },
+    {
+      "id":54,
+      "sentence":"Est ce que ________ est loin d’ici ?",
+      "context":"city"
+    },
+    {
+      "id":55,
+      "sentence":"Est ce que _______ est proche d’ici ?",
+      "context":"city"
+    },
+      {
+      "id":56,
+      "sentence":"Bonjour, une table pour deux s’il vous plait.",
+      "context":"restaurant"
+    },
+    {
+      "id":57,
+      "sentence":"Je voudrais boire.",
+      "context":"restaurant"
+    },
+    {
+      "id":58,
+      "sentence":"Pourrais je voir le menu ?",
+      "context":"restaurant"
+    },
+    {
+      "id":59,
+      "sentence":"je voudrais commander ____.",
+      "context":"restaurant"
+    },
+    {
+      "id":60,
+      "sentence":"je vais prendre une soupe.",
+      "context":"restaurant"
+    },
+    {
+      "id":61,
+      "sentence":"Je vais prendre une entrée / un dessert.",
+      "context":"restaurant"
+    },
+    {
+      "id":62,
+      "sentence":"Pourrais je avoir l’addition, s’il vous plait ?",
+      "context":"restaurant"
+    },
+    {
+      "id":63,
+      "sentence":"Gardez la monnaie.",
+      "context":"restaurant"
+    },
+    {
+      "id":64,
+      "sentence":"Merci, c’était excellent, délicieux / très bon.",
+      "context":"restaurant"
+    },
+    {
+      "id":65,
+      "sentence":"Combien ça coûte ?",
+      "context":"store"
+    },
+    {
+      "id":66,
+      "sentence":"Est ce que je peux payer en espèce ?",
+      "context":"store"
+    },
+    {
+      "id":67,
+      "sentence":"Est ce que vous acceptez les euros ?",
+      "context":"store"
+    },
+    {
+      "id":68,
+      "sentence":"Je voudrais acheter _____.",
+      "context":"store"
+    },
+    {
+      "id":69,
+      "sentence":"Je cherche ______.",
+      "context":"store"
+    },
+    {
+      "id":70,
+      "sentence":"C’est trop grand / petit.",
+      "context":"store"
+    },
+    {
+      "id":71,
+      "sentence":"C’est trop cher / vraiment pas cher",
+      "context":"store"
+    },
+    {
+      "id":72,
+      "sentence":"L’avez vous dans une autre taille / couleur ?",
+      "context":"store"
+    }    
   ]
 }
