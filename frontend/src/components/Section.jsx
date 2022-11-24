@@ -1,33 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
+import Button from "./Button";
 import "../Section.css";
+import data from "../data/sentences";
+
+const buttonsData = [
+  { category: "🔤 Les Bases", label: "basic" },
+  { category: "🛫 à l'Aéroport", label: "airport" },
+  { category: "✈️ Dans l'avion", label: "plane" },
+  { category: " 🛣️ ...Une fois arrivé", label: "arrived" },
+  { category: "🏪 Dans un magasin", label: "store" },
+  { category: "🛎️ à l'Hotel", label: "hotel" },
+  { category: "🏙️ Dans la ville", label: "city" },
+  { category: "🍴 Au restaurant", label: "restaurant" },
+];
 
 function Section() {
+  const [activeFilter, setActiveFilter] = useState();
+
   return (
     <div className="buttonContainer">
-      <button type="button" className="buttons">
-        🔤 Les bases
-      </button>
-      <button type="button" className="buttons">
-        🛫 à l'Aéroport
-      </button>
-      <button type="button" className="buttons">
-        ✈️ Dans l'avion
-      </button>
-      <button type="button" className="buttons">
-        🛣️ ...Une fois arrivé
-      </button>
-      <button type="button" className="buttons">
-        🛎️ à l'Hotel
-      </button>
-      <button type="button" className="buttons">
-        🍴 Au restaurant
-      </button>
-      <button type="button" className="buttons">
-        🏙️ Dans la ville
-      </button>
-      <button type="button" className="buttons">
-        🏪 Dans un magasin
-      </button>
+      {activeFilter
+        ? data
+            .filter((el) => el.context === activeFilter)
+            .map((el) => (
+              <p key={Math.floor(Math.random() * 98899999)}>{el.sentence}</p>
+            ))
+        : buttonsData.map((buttonData) => (
+            <Button
+              key={Math.floor(Math.random() * 98899999)}
+              handleClick={() => {
+                setActiveFilter(buttonData.label);
+              }}
+              className="buttons"
+              category={buttonData.category}
+            />
+          ))}
     </div>
   );
 }
