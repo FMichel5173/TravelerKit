@@ -19,10 +19,14 @@ function Header() {
       </div>
       <div className="buttons-header">
         <button type="button" className="button-header">
-          <img src="src/assets/airbnb.png" alt="logo" />
+          <a href="https://www.airbnb.fr/" target="blank">
+            <img src="src/assets/airbnb.png" alt="logo" />
+          </a>
         </button>
         <button type="button" className="button-header">
-          <img src="src/assets/euros.png" alt="$" />
+          <a href="https://www.xe.com/fr/currencyconverter/" target="blank">
+            <img src="src/assets/euros.png" alt="$" />
+          </a>
         </button>
       </div>
     </div>
