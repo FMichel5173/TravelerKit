@@ -5,15 +5,17 @@ function Header() {
   return (
     <div className="header">
       <div>
-        <select className="list">
-          <option>France</option>
-          <option>Germany</option>
-          <option>France</option>
-          <option>France</option>
-          <option>France</option>
-          <option>France</option>
-          <option>France</option>
-        </select>
+        <label>
+          <select className="list">
+            <option>France</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>France</option>
+            <option>France</option>
+            <option>France</option>
+            <option>France</option>
+          </select>
+        </label>
       </div>
       <div className="buttons-header">
         <button type="button" className="button-header">
