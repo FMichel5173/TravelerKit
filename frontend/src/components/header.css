@@ -1,5 +1,5 @@
 .header {
-  background-image: url(../assets/background.jpg);
+  background-image: url(../assets/background.jpeg);
   background-size: cover;
   height: 20rem;
   display: flex;
@@ -13,13 +13,20 @@
   margin: 0 1rem 1rem 1rem;
 }
 
-.list {
-  margin-top: 1rem;
-  padding: 1.5rem 6rem;
-  border-radius: 15px;
-}
-
 .button-header {
   width: 5rem;
   padding: 1rem 0;
 }
+
+select {
+  margin-top: 1rem;
+  width: 250px;
+  height: 60px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
