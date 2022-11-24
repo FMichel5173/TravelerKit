@@ -1,18 +1,39 @@
 import React from "react";
+import "../Section.css";
 
 function Section() {
   return (
-    <div>
-      <p>asdasd </p>
-      <p>assad </p>
-      <p>asdasd </p>
-      <p>asdasd </p>
-      <p>asdasd </p>
-      <p>asdasd </p>
-      <p>asdasd </p>
-      <p>asdasd </p>
-      <p>asdasd </p>
-      <p>asdasd </p>
+    <div className="buttonContainer">
+      <button type="button" className="buttons">
+        🔤 Basics
+      </button>
+      <button type="button" className="buttons">
+        assad
+      </button>
+      <button type="button" className="buttons">
+        asdasd
+      </button>
+      <button type="button" className="buttons">
+        asdasd
+      </button>
+      <button type="button" className="buttons">
+        asdasd
+      </button>
+      <button type="button" className="buttons">
+        asdasd
+      </button>
+      <button type="button" className="buttons">
+        asdasd
+      </button>
+      <button type="button" className="buttons">
+        asdasd
+      </button>
+      <button type="button" className="buttons">
+        asdasd
+      </button>
+      <button type="button" className="buttons">
+        asdasd
+      </button>
     </div>
   );
 }
