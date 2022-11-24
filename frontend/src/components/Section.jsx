@@ -22,9 +22,12 @@ function Section() {
       {activeFilter
         ? data
             .filter((el) => el.context === activeFilter)
-            .map((el) => <p>{el.sentence}</p>)
+            .map((el) => (
+              <p key={Math.floor(Math.random() * 98899999)}>{el.sentence}</p>
+            ))
         : buttonsData.map((buttonData) => (
             <Button
+              key={Math.floor(Math.random() * 98899999)}
               handleClick={() => {
                 setActiveFilter(buttonData.label);
               }}
