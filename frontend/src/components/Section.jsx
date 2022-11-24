@@ -5,34 +5,28 @@ function Section() {
   return (
     <div className="buttonContainer">
       <button type="button" className="buttons">
-        🔤 Basics
+        🔤 Les bases
       </button>
       <button type="button" className="buttons">
-        assad
+        🛫 à l'Aéroport
       </button>
       <button type="button" className="buttons">
-        asdasd
+        ✈️ Dans l'avion
       </button>
       <button type="button" className="buttons">
-        asdasd
+        🛣️ ...Une fois arrivé
       </button>
       <button type="button" className="buttons">
-        asdasd
+        🛎️ à l'Hotel
       </button>
       <button type="button" className="buttons">
-        asdasd
+        🍴 Au restaurant
       </button>
       <button type="button" className="buttons">
-        asdasd
+        🏙️ Dans la ville
       </button>
       <button type="button" className="buttons">
-        asdasd
-      </button>
-      <button type="button" className="buttons">
-        asdasd
-      </button>
-      <button type="button" className="buttons">
-        asdasd
+        🏪 Dans un magasin
       </button>
     </div>
   );
