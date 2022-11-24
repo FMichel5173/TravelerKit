@@ -1,8 +1,9 @@
 import React from "react";
+import "./header.css";
 
 function Header() {
   return (
-    <div>
+    <div className="header">
       <div>
         <select>
           <option>France</option>
@@ -12,9 +13,11 @@ function Header() {
           <option>France</option>
           <option>France</option>
           <option>France</option>
-          <option>France</option>
-          <option>France</option>
         </select>
+      </div>
+      <div className="buttons-header">
+        <button type="button">Hotel</button>
+        <button type="button">Devise</button>
       </div>
     </div>
   );
