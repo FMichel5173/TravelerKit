@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import "../Section.css";
+import "./Section.css";
 import data from "../data/sentences";
 
 const buttonsData = [
@@ -20,7 +20,7 @@ function Section() {
   return (
     <div className="buttonContainer">
       {activeFilter ? (
-        <div>
+        <div className="grid">
           {data
             .filter((el) => el.context === activeFilter)
             .map((el) => (
