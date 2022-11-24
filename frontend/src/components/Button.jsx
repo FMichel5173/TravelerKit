@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import "./Button.css";
 
 function Button({ handleClick, category }) {
   return (
-    <button type="button" onClick={handleClick} className="buttons">
+    <button type="button" onClick={handleClick} className="section-btn">
       {category}
     </button>
   );
