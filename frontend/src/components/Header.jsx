@@ -19,9 +19,10 @@ function Header({ onSaveChange, airbnbLink }) {
             type="text"
             list="countries"
             onChange={handleChange}
+            defaultValue="France"
           />
-          <datalist id="countries" className="list">
-            <option value={value}>France</option>
+          <datalist value={value} id="countries" className="list">
+            <option>France</option>
             {countryList.map((el) => (
               <option key={`${el}`}>{el}</option>
             ))}
