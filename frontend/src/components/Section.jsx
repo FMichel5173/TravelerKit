@@ -19,22 +19,29 @@ function Section() {
 
   return (
     <div className="buttonContainer">
-      {activeFilter
-        ? data
+      {activeFilter ? (
+        <div>
+          {data
             .filter((el) => el.context === activeFilter)
             .map((el) => (
               <p key={Math.floor(Math.random() * 98899999)}>{el.sentence}</p>
-            ))
-        : buttonsData.map((buttonData) => (
-            <Button
-              key={Math.floor(Math.random() * 98899999)}
-              handleClick={() => {
-                setActiveFilter(buttonData.label);
-              }}
-              className="buttons"
-              category={buttonData.category}
-            />
-          ))}
+            ))}
+          <button type="button" onClick={() => setActiveFilter("")}>
+            Retour
+          </button>
+        </div>
+      ) : (
+        buttonsData.map((buttonData) => (
+          <Button
+            key={Math.floor(Math.random() * 98899999)}
+            handleClick={() => {
+              setActiveFilter(buttonData.label);
+            }}
+            className="buttons"
+            category={buttonData.category}
+          />
+        ))
+      )}
     </div>
   );
 }
