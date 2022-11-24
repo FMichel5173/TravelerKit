@@ -1,3 +1,25 @@
-.header{
-    background-color: red;
+.header {
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.buttons-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.list {
+  margin-top: 1rem;
+  padding: 1.5rem 6rem;
+  border-radius: 15px;
+}
+
+.button-header {
+  width: 5rem;
+  padding: 1rem 0;
 }

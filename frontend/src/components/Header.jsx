@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="header">
       <div>
-        <select>
+        <select className="list">
           <option>France</option>
           <option>Germany</option>
           <option>France</option>
@@ -16,8 +16,12 @@ function Header() {
         </select>
       </div>
       <div className="buttons-header">
-        <button type="button">Hotel</button>
-        <button type="button">Devise</button>
+        <button type="button" className="button-header">
+          Hotel
+        </button>
+        <button type="button" className="button-header">
+          Devise
+        </button>
       </div>
     </div>
   );
