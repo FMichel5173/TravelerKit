@@ -1,0 +1,13 @@
+.buttonContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.buttons {
+  width: 40%;
+  height: 60px;
+}
+.sentences {
+  font-size: 1.5rem;
+  text-align: center;
+}
