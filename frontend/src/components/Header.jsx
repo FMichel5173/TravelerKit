@@ -17,10 +17,10 @@ function Header() {
       </div>
       <div className="buttons-header">
         <button type="button" className="button-header">
-          Hotel
+          <img src="src/assets/airbnb.png" alt="logo" />
         </button>
         <button type="button" className="button-header">
-          Devise
+          <img src="src/assets/euros.png" alt="$" />
         </button>
       </div>
     </div>

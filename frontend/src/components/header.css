@@ -17,9 +17,20 @@
   margin-top: 1rem;
   padding: 1.5rem 6rem;
   border-radius: 15px;
+  border: 2px solid black;
 }
 
 .button-header {
-  width: 5rem;
-  padding: 1rem 0;
+  border-radius: 50%;
+  border: 2px solid white;
+  opacity: 40;
+  width: 4rem;
+  height: 4rem;
+}
+
+.button-header img {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 3px;
 }
