@@ -7,7 +7,6 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Header />
       <Flag flag="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1024px-Flag_of_France.svg.png" />
       <Section />
     </div>
