@@ -1,0 +1,38 @@
+.flag-section {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  margin: auto;
+}
+
+.flag-section > * {
+  justify-content: space-between;
+}
+.flag-btn {
+  background: transparent;
+  border: none;
+  height: 150px;
+}
+.flag-img {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
