@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./header.css";
 import { PropTypes } from "prop-types";
 import countryList from "../countries";
 
-function Header({ onSaveChange, airbnbLink, bgImage }) {
-  const [value, setValue] = useState("France");
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-  onSaveChange(value);
-
+function Header({ airbnbLink, bgImage, currentCountry, handleChange }) {
   return (
     <div
       style={{
@@ -26,7 +20,7 @@ function Header({ onSaveChange, airbnbLink, bgImage }) {
             onChange={handleChange}
             defaultValue="France"
           />
-          <datalist value={value} id="countries" className="list">
+          <datalist value={currentCountry} id="countries" className="list">
             <option>France</option>
             {countryList.map((el) => (
               <option key={`${el}`}>{el}</option>
@@ -53,7 +47,8 @@ function Header({ onSaveChange, airbnbLink, bgImage }) {
 export default Header;
 
 Header.propTypes = {
-  onSaveChange: PropTypes.func.isRequired,
   airbnbLink: PropTypes.string.isRequired,
   bgImage: PropTypes.string.isRequired,
+  currentCountry: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
