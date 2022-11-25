@@ -11,7 +11,7 @@ const sentencesData = [
   },
   {
     id: 3,
-    sentence: "S'il vous plait",
+    sentence: "S'il vous plaît",
     context: "basic",
   },
   {
