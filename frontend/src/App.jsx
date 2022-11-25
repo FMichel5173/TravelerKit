@@ -7,15 +7,15 @@ import Section from "./components/Section";
 import "./App.css";
 
 function App() {
-  const [currentCountry, setCurrentCountry] = useState();
-  const saveData = (data) => {
-    setCurrentCountry(data);
-  };
+  const [currentCountry, setCurrentCountry] = useState("France");
   const airbnb = `https://airbnb.com/s/${currentCountry}`;
   const url = `https://countryflagsapi.com/png/${currentCountry}`;
   const [bgImg, setBgImg] = useState(
     "https://images.unsplash.com/photo-1529592767881-c6bb394eb83d?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
   );
+  const handleChange = (event) => {
+    setCurrentCountry(event.target.value);
+  };
 
   useEffect(() => {
     const bgUrl = `https://api.unsplash.com/search/photos?page=1&query=${currentCountry}&client_id=XuPw48z1TijSMvcA-Faw1EjMb5kyrrqwxv6fnV8cCog`;
@@ -36,14 +36,19 @@ function App() {
 
   return (
     <div className="App">
-      <Header bgImage={bgImg} airbnbLink={airbnb} onSaveChange={saveData} />
+      <Header
+        bgImage={bgImg}
+        airbnbLink={airbnb}
+        currentCountry={currentCountry}
+        handleChange={handleChange}
+      />
       <Flag
         flag={
           url === "undefined" ? "https://countryflagsapi.com/png/france" : url
         }
         country={currentCountry}
       />
-      <Section />
+      <Section currentCountry={currentCountry} />
     </div>
   );
 }
