@@ -1,6 +1,7 @@
 .header {
   background-image: url(../assets/background.jpeg);
   background-size: cover;
+  background-position: center;
   height: 20rem;
   display: flex;
   justify-content: space-between;
@@ -41,4 +42,40 @@ select {
   margin-top: 3rem;
   padding-left: 5.5rem;
   font-size: 1.1rem;
-}   
+}
+
+datalist {
+  padding: 0 50px;
+  border: yellow 1px solid;
+  color: red;
+}
+
+.input-country {
+  width: 40%;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  outline: none;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.list > * {
+  font-size: 0.8em;
+  padding: 0.3em 1em;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.list option {
+  font-size: 0.8em;
+  padding: 0.3em 1em;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.input-country:active,
+.input-country:focus {
+  border: none;
+}
