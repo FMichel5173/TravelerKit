@@ -11,7 +11,7 @@ function App() {
   const saveData = (data) => {
     setCurrentCountry(data);
   };
-  const airbnb = `https://ru.airbnb.com/s/${currentCountry}`;
+  const airbnb = `https://airbnb.com/s/${currentCountry}`;
   const url = `https://countryflagsapi.com/png/${currentCountry}`;
   return (
     <div className="App">
