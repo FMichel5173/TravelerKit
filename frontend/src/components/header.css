@@ -61,6 +61,7 @@ datalist {
   outline: none;
   letter-spacing: 2px;
   font-size: 20px;
+  border-radius: 40px;
 }
 .list > * {
   font-size: 0.8em;
