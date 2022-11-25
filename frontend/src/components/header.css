@@ -37,5 +37,8 @@ select {
   display: inline-block;
   cursor: pointer;
   font-size: 1rem;
-  border-radius: 15px;
-}
+  border-radius: 50px;
+  margin-top: 3rem;
+  padding-left: 5.5rem;
+  font-size: 1.1rem;
+}   
