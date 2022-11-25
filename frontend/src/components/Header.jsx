@@ -3,7 +3,7 @@ import "./header.css";
 import { PropTypes } from "prop-types";
 import countryList from "../countries";
 
-function Header({ onSaveChange, airbnbLink }) {
+function Header({ onSaveChange, airbnbLink, bgImage }) {
   const [value, setValue] = useState("France");
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -11,7 +11,12 @@ function Header({ onSaveChange, airbnbLink }) {
   onSaveChange(value);
 
   return (
-    <div className="header">
+    <div
+      style={{
+        backgroundImage: `url(${bgImage})`,
+      }}
+      className="header"
+    >
       <div>
         <label>
           <input
@@ -50,4 +55,5 @@ export default Header;
 Header.propTypes = {
   onSaveChange: PropTypes.func.isRequired,
   airbnbLink: PropTypes.string.isRequired,
+  bgImage: PropTypes.string.isRequired,
 };

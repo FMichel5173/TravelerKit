@@ -1,5 +1,4 @@
 .header {
-  background-image: url(../assets/background.jpeg);
   background-size: cover;
   background-position: center;
   height: 20rem;
@@ -61,6 +60,7 @@ datalist {
   outline: none;
   letter-spacing: 2px;
   font-size: 20px;
+  border-radius: 40px;
 }
 .list > * {
   font-size: 0.8em;
