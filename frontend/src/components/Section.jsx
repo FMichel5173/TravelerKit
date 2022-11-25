@@ -16,7 +16,6 @@ const buttonsData = [
 
 function Section() {
   const [activeFilter, setActiveFilter] = useState();
-
   return (
     <div className="buttonContainer">
       {activeFilter ? (
@@ -24,17 +23,32 @@ function Section() {
           {data
             .filter((el) => el.context === activeFilter)
             .map((el) => (
-              <p
+              <button
+                type="button"
                 className="sentences"
                 key={Math.floor(Math.random() * 98899999)}
+                onClick={() => {
+                  const target = "english";
+                  fetch(
+                    `${import.meta.env.VITE_BACKEND_URL}/translate?q=${
+                      el.sentence
+                    }&source=french&target=${target}`
+                  )
+                    .then((response) => response.json())
+                    .then((incomingData) =>
+                      console.warn(incomingData.translations[0])
+                    );
+                }}
               >
                 {el.sentence}
-              </p>
+              </button>
             ))}
           <button
             className="buttons"
             type="button"
-            onClick={() => setActiveFilter("")}
+            onClick={() => {
+              setActiveFilter("");
+            }}
           >
             Retour
           </button>
